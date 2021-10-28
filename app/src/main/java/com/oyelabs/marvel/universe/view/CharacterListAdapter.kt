@@ -24,8 +24,8 @@ class CharacterListAdapter(
     override fun getItemCount() = characterList.size
 
     @SuppressLint("NotifyDataSetChanged")
-    fun addData(users: ArrayList<Character>) {
-        characterList.addAll(users)
+    fun addData(characters: ArrayList<Character>) {
+        characterList.addAll(characters)
         notifyDataSetChanged()
     }
 

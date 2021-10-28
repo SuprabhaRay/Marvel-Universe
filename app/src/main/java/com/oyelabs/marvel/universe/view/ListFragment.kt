@@ -71,8 +71,8 @@ class ListFragment : Fragment() {
                 when (resource.status) {
                     Status.SUCCESS -> {
                         binding.loadingProgressBar.visibility = View.GONE
-                        resource.data?.data?.results?.let { users ->
-                            listAdapter.addData(users)
+                        resource.data?.data?.results?.let { addCharacters ->
+                            listAdapter.addData(addCharacters)
                         }
                     }
                     Status.ERROR -> {
