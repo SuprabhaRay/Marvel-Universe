@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutItemCharacter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageViewCharacterList"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:padding="1dp"
+        tools:src="@tools:sample/backgrounds/scenic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textCharacterListName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#afff"
+        android:gravity="center"
+        android:layout_margin="1dp"
+        android:padding="8dp"
+        style="@style/Title"
+        tools:text="textViewCharacterList"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/textCharacterListDescription"
+        style="@style/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#afff"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="3"
+        android:layout_margin="1dp"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="textCharacterListDescription, textCharacterListDescription,
+        textCharacterListDescription, textCharacterListDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
